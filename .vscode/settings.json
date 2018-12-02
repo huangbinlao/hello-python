@@ -1,0 +1,23 @@
+{
+    "background.customImages": [
+        "D:/ProgramFiles/JetBrains/ideaIU201801/image/mfff/mmth.jpg"
+    ],
+    "background.styles": [
+        {
+            "content": "''",
+			"pointer-events": "none",
+			"position": "absolute",
+			"z-index": "99999",
+			"width": "100%",
+			"height": "100%",
+			"background-position": "center",
+			"background-repeat": "no-repeat",
+			"background-size": "100%,100%",
+			"opacity": 0.1
+        },
+        {},
+        {}
+    ],
+    "background.useDefault": false,
+    "python.pythonPath": "D:\\ProgramFiles\\Python\\python.exe"
+}
