@@ -282,7 +282,7 @@ def power(x,n=5):
     return s
 print(power(3))
 
-def hello(greeting, *args):
+def hello(greeting, *args): 
     if (len(args)==0):
         print('%s!' % greeting)
     else:
