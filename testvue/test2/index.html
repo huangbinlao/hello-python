@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../vue.js"></script>
+</head>
+<body>
+    <div id="main">
+      <div style="margin-top:10px;margin-left:10px;width:400px" class="input-group">
+        <div class="input-group-addon">输入框</div>
+        <input v-model="inp" type="text" class="form-control" placeholder="请输入内容">
+      </div>
+      <div style="margin-top:15px;margin-left:150px;" class="btn btn-default" type="button">
+          <div v-on:click="toggle()" class=" glypicon glypicon-search">{{ inp }}</div>
+      </div>
+    </div>
+</body>
+</html>

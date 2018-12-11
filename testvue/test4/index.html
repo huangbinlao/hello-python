@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../vue.js"></script>
+</head>
+<body>
+   <div style="margin-left:100px;margin-top:100px;width:600px;" id="main">
+        <div class="input-group">
+               <input v-model="searchString" type="text" class="form-control" placeholder="请输入标题名称" />
+               <div class="input-group-addon">搜索</div>
+        </div>
+        <ul class="list-group">
+            <template v-for="msg in msgs|searchFor22 searchString">
+            <li class="list-group-item">
+               <span>{{msg.title }}</span>
+               <span style="margin-left:10px;">{{msg.author }}</span>
+            </li>
+          </template>
+        </ul>
+   </div>
+</body>
+</html>
