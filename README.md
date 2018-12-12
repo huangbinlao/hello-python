@@ -1,6 +1,6 @@
 # hello-python
 测试对应python
 create new brach file develop version
-info 
+info new add test info 
 
 
